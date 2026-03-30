@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codari | Software a medida</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap');
+
     :root {
       --primary: #1d4ed8;
       --primary-dark: #1e40af;
@@ -16,6 +18,8 @@
       --shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
       --radius: 14px;
       --container: 1160px;
+      --font-title: "Space Grotesk", "Segoe UI", Roboto, Arial, sans-serif;
+      --font-body: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
     }
 
     * {
@@ -25,7 +29,7 @@
     }
 
     body {
-      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: var(--font-body);
       color: var(--text);
       background: var(--bg);
       line-height: 1.35;
@@ -142,6 +146,7 @@
     }
 
     .hero h1 {
+      font-family: var(--font-title);
       font-size: clamp(1.8rem, 4.3vw, 3.6rem);
       line-height: 1.03;
       letter-spacing: -0.03em;
