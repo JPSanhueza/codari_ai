@@ -58,12 +58,15 @@
     }
 
     .logo {
-      font-weight: 800;
-      font-size: clamp(1.9rem, 3vw, 2.4rem);
-      color: var(--primary);
-      letter-spacing: -0.04em;
+      display: inline-flex;
+      align-items: center;
       text-decoration: none;
       line-height: 1;
+    }
+
+    .logo img {
+      width: clamp(130px, 14vw, 170px);
+      height: auto;
     }
 
     .nav-toggle {
@@ -139,7 +142,7 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.1rem, 5vw, 4.25rem);
+      font-size: clamp(1.8rem, 4.3vw, 3.6rem);
       line-height: 1.03;
       letter-spacing: -0.03em;
       font-weight: 800;
@@ -151,7 +154,7 @@
     }
 
     .hero p {
-      font-size: clamp(1.05rem, 2.3vw, 2rem);
+      font-size: clamp(0.95rem, 1.75vw, 1.45rem);
       color: var(--muted);
       max-width: 33ch;
       margin-bottom: 1.8rem;
@@ -270,7 +273,9 @@
 <body>
   <header class="site-header">
     <div class="container header-content">
-      <a href="#" class="logo" aria-label="Codari">codari</a>
+      <a href="#" class="logo" aria-label="Codari">
+        <img src="logo_codari.png" alt="Codari" />
+      </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navWrap">☰</button>
 
